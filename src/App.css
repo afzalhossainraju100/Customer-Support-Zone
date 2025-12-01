@@ -2,3 +2,23 @@
     background-color: aliceblue;
     color: black;
 }
+.ButtonHover {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.ButtonHover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: 0.3s;
+}
+
+.ButtonHover:hover::after {
+  width: 100%;
+}
