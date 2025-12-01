@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div className="bg-[#000000] text-[#ffffff]">
       <div className="w-[90%] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between gap-8 py-16 items-start">
-          <div className="flex flex-col md:w-[25%] space-y-2">
+        <div className="flex flex-col justify-center items-center md:flex-row  md:justify-between gap-8 py-16 md:items-start">
+          <div className="flex flex-col items-center md:items-start p-8 md:p-0 md:w-[25%] space-y-2">
             <h2 className="text-xl font-bold mb-4">CS — Ticket System</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

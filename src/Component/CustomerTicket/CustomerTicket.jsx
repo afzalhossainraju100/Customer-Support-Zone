@@ -26,7 +26,7 @@ const CustomerTicket = () => {
                 resetting their password multiple times but still...
               </p>
               <div className="flex justify-between gap-2 items-center">
-                <div className="flex gap-2">
+                <div className="flex flex-col md:flex-row gap-2">
                   <p className="text-[#627382] text-3.5 font-[500] leading-4 tracking-normal text-left font-inter">
                     #1001
                   </p>
@@ -34,7 +34,7 @@ const CustomerTicket = () => {
                     HIGH PRIORITY
                   </p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex flex-col md:flex-row gap-2">
                   <p className="text-[#627382] text-4 font-[400] leading-5 tracking-normal text-left font-inter">
                     John Smith
                   </p>
