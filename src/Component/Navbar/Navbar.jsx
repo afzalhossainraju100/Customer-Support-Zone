@@ -3,11 +3,11 @@ import plusImg from "../../assets/plus.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#FFFFFF] mb-[4rem]">
-      <div className="navbar w-[95%] sm:w-[90%] mx-auto shadow-y-sm py-2 overflow-visible">
+    <div className="bg-[#FFFFFF] mb-[3rem] ">
+      <div className="navbar w-[90%] mx-auto shadow-y-sm py-2 overflow-visible">
         <div className="flex-1">
-          <a className="btn btn-ghost text-lg sm:text-xl normal-case">
-            CS-Ticket System
+          <a className="text-lg sm:text-xl normal-case">
+            <b>CS—Ticket System</b>
           </a>
         </div>
 
@@ -16,11 +16,21 @@ const Navbar = () => {
             <a className="ButtonHover" href="">
               Home
             </a>
-            <a className="ButtonHover" href="">FAQ</a>
-            <a className="ButtonHover" href="">Changelog</a>
-            <a className="ButtonHover" href="">Blog</a>
-            <a className="ButtonHover" href="">Download</a>
-            <a className="ButtonHover" href="">Contact</a>
+            <a className="ButtonHover" href="">
+              FAQ
+            </a>
+            <a className="ButtonHover" href="">
+              Changelog
+            </a>
+            <a className="ButtonHover" href="">
+              Blog
+            </a>
+            <a className="ButtonHover" href="">
+              Download
+            </a>
+            <a className="ButtonHover" href="">
+              Contact
+            </a>
           </div>
 
           <button
@@ -56,22 +66,34 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-2 z-50 p-2 shadow rounded-box w-48 bg-white"
             >
               <li>
-                <a className="ButtonHover" href="">Home</a>
+                <a className="ButtonHover" href="">
+                  Home
+                </a>
               </li>
               <li>
-                <a className="ButtonHover" href="">FAQ</a>
+                <a className="ButtonHover" href="">
+                  FAQ
+                </a>
               </li>
               <li>
-                <a className="ButtonHover" href="">Changelog</a>
+                <a className="ButtonHover" href="">
+                  Changelog
+                </a>
               </li>
               <li>
-                <a className="ButtonHover" href="">Blog</a>
+                <a className="ButtonHover" href="">
+                  Blog
+                </a>
               </li>
               <li>
-                <a className="ButtonHover" href="">Download</a>
+                <a className="ButtonHover" href="">
+                  Download
+                </a>
               </li>
               <li>
-                <a className="ButtonHover" href="">Contact</a>
+                <a className="ButtonHover" href="">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
