@@ -4,7 +4,7 @@ import calenderIcon from "../../assets/calender.png";
 import yollowDot from "../../assets/yellowdot.png";
 
 const TicketCard = ({ ticket, onClick }) => {
-//   console.log(ticket);
+  //   console.log(ticket);
   return (
     <div
       onClick={onClick}

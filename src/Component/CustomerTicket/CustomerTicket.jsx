@@ -1,20 +1,28 @@
-import React, { use, useState } from "react";
+import React, { use, useState, useEffect, useRef } from "react";
 import TicketCard from "../TicketCard/TicketCard";
 import TaskStatus from "../TaskStatus/TaskStatus";
+import { toast } from "react-toastify";
 
-const CustomerTicket = ({ TicketPromise }) => {
+const CustomerTicket = ({ TicketPromise, onSelectedChange }) => {
   const TicketData = use(TicketPromise);
   const [selectedTicket, setSelectedTicket] = useState([]);
 
   const HandleSelectTicket = (ticket) => {
-    setSelectedTicket(prev => 
-    {
-      if(prev.some(t=> t.id === ticket.id)) return prev;
+    setSelectedTicket((prev) => {
+      if (prev.some((t) => t.id === ticket.id)) return prev;
       return [...prev, ticket];
-    }
-    );
+    });
   };
-      // console.log(selectedTicket);
+  const prevLenRef = useRef(0);
+
+  useEffect(() => {
+    if (selectedTicket.length > prevLenRef.current) {
+      toast.success("Ticket added successfully");
+      if (typeof onSelectedChange === "function")
+        onSelectedChange(selectedTicket.length);
+    }
+    prevLenRef.current = selectedTicket.length;
+  }, [selectedTicket, onSelectedChange]);
   return (
     <div className="w-[90%] mx-auto mb-[3rem]">
       <div className="flex flex-col md:flex-row justify-between gap-[1.5rem]">
@@ -41,10 +49,7 @@ const CustomerTicket = ({ TicketPromise }) => {
             </p>
             <div className="flex flex-col gap-4">
               {selectedTicket.map((TSticket) => (
-                <TaskStatus 
-                key={TSticket.id}
-                TSticket={TSticket}
-                ></TaskStatus>
+                <TaskStatus key={TSticket.id} TSticket={TSticket}></TaskStatus>
               ))}
             </div>
           </div>

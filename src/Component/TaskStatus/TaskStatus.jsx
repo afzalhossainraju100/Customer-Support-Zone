@@ -1,7 +1,7 @@
 import React from "react";
 
 const TaskStatus = ({ TSticket }) => {
-    console.log(TSticket);
+    // console.log(TSticket);
   return (
     <div className="border-box rounded-md shadow-[0_4px_16px_0_rgba(0,0,0,0.08)] bg-[#ffffff]">
       <div className="space-y-4 p-[1.2rem]">
