@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in even after multiple password reset attempts.",
+    "customer": "John Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Failed",
+    "description": "Customer's card keeps declining although the bank confirms no issue.",
+    "customer": "Emily Davis",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-01-18"
+  },
+  {
+    "id": 1003,
+    "title": "Error While Uploading Files",
+    "description": "User reports receiving a 'File format not supported' error on valid files.",
+    "customer": "Michael Thompson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2024-01-19"
+  },
+  {
+    "id": 1004,
+    "title": "App Freezing Frequently",
+    "description": "Mobile app keeps freezing after the latest update.",
+    "customer": "Sophia Garcia",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2024-01-20"
+  },
+  {
+    "id": 1005,
+    "title": "Unable to Update Profile Info",
+    "description": "Customer cannot update their phone number or email address.",
+    "customer": "Daniel Lee",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-01-21"
+  },
+  {
+    "id": 1006,
+    "title": "Notification Not Received",
+    "description": "Push notifications are not appearing on Android devices.",
+    "customer": "Olivia Martinez",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-01-22"
+  },
+  {
+    "id": 1007,
+    "title": "Password Reset Email Not Sent",
+    "description": "Customer requested password reset but didn't receive any email.",
+    "customer": "William Brown",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-01-22"
+  },
+  {
+    "id": 1008,
+    "title": "Wrong Billing Amount",
+    "description": "Customer is charged twice for the same month.",
+    "customer": "Ava Wilson",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2024-01-23"
+  },
+  {
+    "id": 1009,
+    "title": "Slow Website Performance",
+    "description": "Website takes more than 10 seconds to load dashboard.",
+    "customer": "Liam Johnson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-01-24"
+  },
+  {
+    "id": 1010,
+    "title": "Feature Request - Dark Mode",
+    "description": "Customer requests a dark mode for better night usability.",
+    "customer": "Mia Anderson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-01-24"
+  },
+  {
+    "id": 1011,
+    "title": "Account Suspended by Mistake",
+    "description": "User reports their account is suspended without violating policies.",
+    "customer": "Ethan Harris",
+    "priority": "High",
+    "status": "In Review",
+    "createdAt": "2024-01-25"
+  },
+  {
+    "id": 1012,
+    "title": "Email Not Verifying",
+    "description": "Verification link redirects to an error page.",
+    "customer": "Isabella Clark",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-01-26"
+  },
+  {
+    "id": 1013,
+    "title": "Cannot Download Invoice",
+    "description": "User receives a 404 error when downloading invoices.",
+    "customer": "James Walker",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2024-01-27"
+  },
+  {
+    "id": 1014,
+    "title": "Two-Factor Authentication Not Working",
+    "description": "Authentication code is not accepted even though it's correct.",
+    "customer": "Charlotte Hall",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-01-27"
+  },
+  {
+    "id": 1015,
+    "title": "Bug in Dashboard Analytics",
+    "description": "Analytics data is showing incorrect numbers.",
+    "customer": "Benjamin Young",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2024-01-28"
+  }
+]
