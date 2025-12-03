@@ -1,7 +1,7 @@
 import React from "react";
 import bgVector1 from "../../assets/vector1.png";
 
-const Banner = ({ inProgress }) => {
+const Banner = ({ inProgress, resolved = 0 }) => {
   return (
     <div className="w-[90%] mx-auto mb-[3rem]">
       <div className="flex gap-8 justify-center ">
@@ -54,7 +54,7 @@ const Banner = ({ inProgress }) => {
             Resolved
           </h2>
           <h1 className="text-[#ffffff] text-5xl font-semibold leading-[73px] text-center">
-            0
+            {resolved}
           </h1>
         </div>
       </div>
