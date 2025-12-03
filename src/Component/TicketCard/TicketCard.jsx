@@ -3,10 +3,13 @@ import greenDot from "../../assets/greendot.png";
 import calenderIcon from "../../assets/calender.png";
 import yollowDot from "../../assets/yellowdot.png";
 
-const TicketCard = ({ ticket }) => {
+const TicketCard = ({ ticket, onClick }) => {
 //   console.log(ticket);
   return (
-    <div className="box-border rounded-md shadow-[0_4px_16px_0_rgba(0,0,0,0.08)] bg-[#ffffff]">
+    <div
+      onClick={onClick}
+      className="box-border rounded-md shadow-[0_4px_16px_0_rgba(0,0,0,0.08)] bg-[#ffffff]"
+    >
       <div className="space-y-4 p-[1.2rem]">
         <div className="flex justify-between items-center">
           <p className="text-[#001931] text-[1.2rem] font-[500] leading-[1.2rem] tracking-normal text-left font-inter ">
@@ -51,7 +54,7 @@ const TicketCard = ({ ticket }) => {
           </div>
           <div className="flex flex-col md:flex-row gap-2">
             <p className="text-[#627382] text-4 font-[400] leading-5 tracking-normal text-left font-inter">
-              {ticket.owner}
+              {ticket.customer}
             </p>
             <p className="flex gap-1 text-[#627382] text-4 font-[400] leading-5 tracking-normal text-left font-inter">
               <img
@@ -59,7 +62,7 @@ const TicketCard = ({ ticket }) => {
                 src={calenderIcon}
                 alt="calendar icon"
               />
-              {ticket.date}
+              {ticket.createdAt}
             </p>
           </div>
         </div>
